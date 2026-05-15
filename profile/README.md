@@ -15,7 +15,7 @@ Scalable retrieval system project for **Temu Balik Informasi (TBI)**.
 We are building a scalable multi-service book retrieval platform with:
 
 - Keyword-based retrieval
-- Semantic retrieval flow (in progress)
+- Hybrid retrieval (BM25 + vector kNN)
 - Microservice architecture and async messaging
 
 ## Repositories
@@ -24,13 +24,17 @@ We are building a scalable multi-service book retrieval platform with:
 - [backend](https://github.com/TBI-2026/backend)
 - [authentication](https://github.com/TBI-2026/authentication)
 - [location](https://github.com/TBI-2026/location)
+- [search-service](https://github.com/TBI-2026/search-service)
 
 ## Progress Status (15 May 2026)
 
 - Core services and API are running
 - Live search integration is available in frontend
 - Retrieval baseline (keyword search) is implemented
-- OpenSearch/Elasticsearch integration is planned for final phase
+- OpenSearch-based `search-service` is implemented with:
+- `GET /search` for hybrid retrieval (BM25 + vector kNN + RRF)
+- `POST /index` and `POST /index/bulk` for indexing
+- RabbitMQ consumer for async indexing on `book.created`
 
 ## Deliverables
 
