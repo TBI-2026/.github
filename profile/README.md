@@ -30,4 +30,4 @@ We are building a scalable multi-service book retrieval platform with:
 
 - GitHub repositories (available)
 - Hosted demo link: [tbi.gaung.org](https://tbi.gaung.org)
-- YouTube demo (<= 15 minutes): `TBD`
+- YouTube demo (<= 15 minutes): [https://youtu.be/5huF4Z-iaMs](https://youtu.be/5huF4Z-iaMs)
